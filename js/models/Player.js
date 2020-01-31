@@ -85,6 +85,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       }
   
       checkJump(cursors){
+        //checks if player body is blocked bellow
         if(this.body.blocked.down){
           this.jump=2;
         }
