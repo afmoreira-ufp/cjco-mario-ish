@@ -91,7 +91,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         }
         //isJustDown implemented to allow only one jump at a time (key must be pressed and released)
         if ((this.isJustDown(cursors.up)&&this.jump>0)) {     
-          this.jump--;
+            this.jump--;
             this.setVelocityY(this.velocity*-2);
             console.log(this.body.velocity);
           }
